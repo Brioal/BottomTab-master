@@ -16,7 +16,7 @@
 ###Step 2. Add the dependency
 ```
 	dependencies {
-	        compile 'com.github.Brioal:BottomTab:1.1'
+	        compile 'com.github.Brioal:BottomTab-master:1.1'
 	}
 ```
 
