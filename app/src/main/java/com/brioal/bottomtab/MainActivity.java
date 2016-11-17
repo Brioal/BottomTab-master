@@ -1,5 +1,6 @@
 package com.brioal.bottomtab;
 
+import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.Toast;
@@ -26,6 +27,8 @@ public class MainActivity extends AppCompatActivity {
         list.add(new TabEntity("标题2", R.mipmap.ic_launcher));
         list.add(new TabEntity("标题3", R.mipmap.ic_launcher));
         list.add(new TabEntity("标题4", R.mipmap.ic_launcher));
+        mLayout.setColorNormal(Color.WHITE);
+        mLayout.setColoeSelected(Color.YELLOW);
         mLayout.setList(list);
         mLayout.setListener(new OnTabSelectedListener() {
             @Override
