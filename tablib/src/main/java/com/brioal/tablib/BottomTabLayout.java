@@ -44,6 +44,19 @@ public class BottomTabLayout extends LinearLayout {
         mColorSelected = getResources().getColor(R.color.selected);
     }
 
+    public void setSelectedPosition(int position) {
+        for (int i = 0; i < getChildCount(); i++) {
+            BottomTab tab = (BottomTab) getChildAt(i);
+            if (i == position) {
+                tab.setChecked(true);
+                mListener.onSelected(position);
+            } else {
+                tab.setChecked(false);
+            }
+        }
+        postInvalidate();
+    }
+
     public void setList(List<TabEntity> list) {
         mList = list;
         for (int i = 0; i < mList.size(); i++) {
