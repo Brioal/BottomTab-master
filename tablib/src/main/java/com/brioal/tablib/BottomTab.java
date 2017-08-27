@@ -8,14 +8,13 @@ import android.graphics.PorterDuff;
 import android.graphics.Rect;
 import android.graphics.drawable.Drawable;
 import android.util.AttributeSet;
-import android.widget.RadioButton;
 
 /**
  * 按钮组件
  * Created by Brioal on 2016/8/18.
  */
 
-public class BottomTab extends RadioButton {
+public class BottomTab extends android.support.v7.widget.AppCompatRadioButton {
     private int mHeight; // 按钮高度
     private int mIconHeight; //Icon高度
     private int mColorSelect; //选中颜色
@@ -140,7 +139,6 @@ public class BottomTab extends RadioButton {
         } else {
             mPaint.setColor(mColorNormal);
         }
-
         mPaint.setTextSize(mTextSize);
         canvas.save();
         canvas.translate(getWidth() / 2, mIconHeight + (getHeight() - mIconHeight) / 2);

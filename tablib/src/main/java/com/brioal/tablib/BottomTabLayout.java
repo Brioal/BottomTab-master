@@ -3,13 +3,12 @@ package com.brioal.tablib;
 import android.content.Context;
 import android.util.AttributeSet;
 import android.view.View;
-import android.widget.LinearLayout;
 import android.widget.RadioGroup;
 
 import java.util.List;
 
 
-public class BottomTabLayout extends LinearLayout {
+public class BottomTabLayout extends RadioGroup {
     private List<TabEntity> mList;
     private OnTabSelectedListener mListener;
     private int mColorNormal;
@@ -46,15 +45,13 @@ public class BottomTabLayout extends LinearLayout {
 
     public void setSelectedPosition(int position) {
         for (int i = 0; i < getChildCount(); i++) {
-            BottomTab tab = (BottomTab) getChildAt(i);
-            if (i == position) {
-                tab.setChecked(true);
-                mListener.onSelected(position);
+            if (position == i) {
+                getChildAt(i).setSelected(true);
             } else {
-                tab.setChecked(false);
+                getChildAt(i).setSelected(false);
             }
         }
-        postInvalidate();
+        mListener.onSelected(position);
     }
 
     public void setList(List<TabEntity> list) {
