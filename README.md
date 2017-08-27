@@ -1,7 +1,4 @@
-# BottomTab[![](https://jitpack.io/v/Brioal/BottomTab.svg)](https://jitpack.io/#Brioal/BottomTab)
-适用于切换只是颜色改变的BottomTabLayout
-![](https://github.com/Brioal/BottomTab/blob/master/art/device-2016-10-02-212055.png)
-
+# 适用于切换只是颜色改变的BottomTabLayout
 ### Step 1. Add the JitPack repository to your build file
 
 #### Add it in your root build.gradle at the end of repositories:
@@ -13,7 +10,7 @@
 		}
 	}
 ```
-### Step 2. Add the dependency
+### Step 2. Add the dependency [![](https://jitpack.io/v/Brioal/BottomTab-master.svg)](https://jitpack.io/#Brioal/BottomTab-master)
 ```
 	dependencies {
 	        compile 'com.github.Brioal:BottomTab-master:1.1'
