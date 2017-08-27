@@ -2,9 +2,9 @@
 适用于切换只是颜色改变的BottomTabLayout
 ![](https://github.com/Brioal/BottomTab/blob/master/art/device-2016-10-02-212055.png)
 
-###Step 1. Add the JitPack repository to your build file
+### Step 1. Add the JitPack repository to your build file
 
-####Add it in your root build.gradle at the end of repositories:
+#### Add it in your root build.gradle at the end of repositories:
 ```
 	allprojects {
 		repositories {
@@ -13,15 +13,15 @@
 		}
 	}
 ```
-###Step 2. Add the dependency
+### Step 2. Add the dependency
 ```
 	dependencies {
 	        compile 'com.github.Brioal:BottomTab-master:1.1'
 	}
 ```
 
-####使用步骤
-####1.xml
+#### 使用步骤
+#### 1.xml
 ```
     <com.brioal.tablib.BottomTabLayout
         android:id="@+id/main_tab"
@@ -32,7 +32,7 @@
     </com.brioal.tablib.BottomTabLayout>
 
 ```
-####2.设置
+#### 2.设置
 ```
  list.add(new TabEntity("标题1", R.mipmap.ic_launcher));
         list.add(new TabEntity("标题2", R.mipmap.ic_launcher));
@@ -51,4 +51,4 @@
             }
         });
 ```
-###同样可设置未读消息,参考[BottomTabLayout](https://github.com/Brioal/BottomTabLayout)
+### 同样可设置未读消息,参考[BottomTabLayout](https://github.com/Brioal/BottomTabLayout)
